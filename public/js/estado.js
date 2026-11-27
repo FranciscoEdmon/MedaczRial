@@ -1,5 +1,3 @@
-/* global reglasMedacz */
-
 export const panel = document.getElementById('paneles');
 export const aviso = document.getElementById('estado-carga');
 
