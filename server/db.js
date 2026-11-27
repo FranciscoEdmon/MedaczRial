@@ -14,7 +14,7 @@ function consultas(cliente) {
     },
   };
 }
-//pool sirve para reutilizar recursosque ya están creados y listos para usarse
+
 function crearPool() {
   if (!process.env.DATABASE_URL) throw new Error('Configura DATABASE_URL');
   const pool = new Pool({
