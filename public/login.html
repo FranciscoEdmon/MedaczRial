@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1B2B6B" />
+    <link rel="icon" href="assets/favicon.jpeg" type="image/svg+xml" />
+    <title>Iniciar sesión · MEDACZ</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <script src="js/componentes.js" defer=""></script>
+  </head>
+  <body data-page="login" class="bg-body">
+    <noscript
+      ><p class="alert alert-info">
+        Activa JavaScript para usar el formulario de inicio de sesión.
+      </p></noscript
+    >
+    <main class="container min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+      <section class="card bg-white shadow-sm rounded-3 p-4 p-sm-5 col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="text-primary mb-3" aria-hidden="true">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <rect x="6" y="10" width="12" height="11" rx="1" />
+            <path d="M9 10V6a3 3 0 0 1 6 0v4M12 14v3" />
+          </svg>
+        </div>
+        <span class="small text-primary fw-semibold">BIENVENIDO DE NUEVO</span>
+        <h1 class="h3 fw-bold mt-2">Iniciar sesión</h1>
+        <p>Accede a tu espacio de trabajo MEDACZ.</p>
+        <form id="login-form">
+          <label class="d-block mb-3"
+            ><span class="form-label d-block">Usuario</span
+            ><input class="form-control bg-white" name="usuario"
+              type="text"
+              required=""
+              autocomplete="username"
+              placeholder="Ingresa tu usuario" /></label
+          ><label class="d-block mb-3"
+            ><span class="form-label d-block">Contraseña</span>
+            <div class="input-group">
+              <input class="form-control bg-white" name="contrasena"
+                type="password"
+                required=""
+                autocomplete="current-password"
+                minlength="8"
+                placeholder="Ingresa tu contraseña"
+              /><button
+                class="password-toggle btn btn-outline-secondary"
+                aria-label="Mostrar contraseña"
+                title="Mostrar contraseña"
+                type="button"
+                aria-pressed="false"
+              >
+                Ver
+              </button>
+            </div></label
+          >
+          <div class="d-flex flex-wrap align-items-start gap-3 my-4">
+            <label><input class="form-check-input" type="checkbox" name="recordar" /> Recordarme</label
+            ><span class="small text-body-secondary"
+              >¿Olvidaste tu contraseña? Contacta al administrador.</span
+            >
+          </div>
+
+          <button class="btn btn-primary w-100 d-flex justify-content-between align-items-center" type="submit">
+            Iniciar sesión <span>→</span>
+          </button>
+          <p id="mensaje-acceso" class="alert alert-info mt-3" role="status" hidden></p>
+        </form>
+      </section>
+      <p class="text-center text-body-secondary small mt-3 mb-0">
+        MEDACZ · Ingresa con tu cuenta.
+      </p>
+    </main>
+  </body>
+</html>
