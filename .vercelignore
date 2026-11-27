@@ -1,0 +1,5 @@
+privado/
+publicar.cmd
+node_modules/
+.vercel/
+.env*
